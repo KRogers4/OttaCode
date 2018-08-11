@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Sprint 1-MS2 Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-</head>
 
-<body>
-<h1> Hello World :) </h1>    
+</head>
+<body>  
+        <p><div><h1 style="color:rgb(1, 54, 104);">Welcome! We're glad to hear from you...</h1></div></p>
+        <span id=' name ')></span>
+        <p><h2>The type of Uke you play:</h2></p>
+        <span id='uke')></span>
+        <p><h2>The player level you entered:</h2> </p>
+        <span id='level')></span>
+        <p><h2>Is it =<i><span id='yrs')></i></span> = to say you've played for more than 5 yrs?:</h2></p>
+        <p><span id='yrs')></span></p>
+        <span id='yrsTrue')></span>   
+        <span id='yrsFalse')></span>  
+        <p></p>
+        <p><h2>Now, before we go further, let's confirm you're human:</h2></p> 
+
+        <form class="input">
+                <label for="number" class="title">
+                  What is two + seven?
+                </label>
+                <br>
+                <input 
+                  name="number" 
+                  required="required"
+                  pattern="(9|nine)" 
+                  oninvalid="this.setCustomValidity('Sorry, please enter the correct answer')"
+                  oninput="this.setCustomValidity('')"
+                >
+                  <!-- The return value will be somewhat hidden to the user. -->
+                <input name="decoy" style="display: none;" />         
+                <input type="submit">
+              </form>
+        
+<script src="mainSpr2.js"></script> 
+<script window.stop()></script> 
+
 </body>
 </html>
