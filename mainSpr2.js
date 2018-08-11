@@ -1,15 +1,15 @@
 //Next, declare variables that use methods of alert, prompt and confirm
-let goodName = alert('Tell us about You and the Ukelele!...Share your name\, uke\, and how many years playing');
-let FName = prompt('Enter your First name?');
-let LName= prompt('Enter your Last name?');
+let goodName = alert('Tell us about You and the Ukelele!...Your name, uke stuff and # of yrs you\'ve been playing');
+let FName = prompt('Enter your FIRST NAME?');
+let LName= prompt('Enter your LAST NAME?');
 //a joke
-let myMovie = prompt('What\'s Your Favorite Movie?');
-let myJoke = alert('WAIT WHAT?--Awake Now?--Just Kidding! Now, tell us about you and the Uke');
+let myMovie = prompt('What\'s your FAVORITE MOVIE?');
+let myJoke = alert('WAIT WHAT?--Awake Now?--Just Kidding! Now, tell us about the Uke and You');
 // return to recieving user input. 
-let myNameUke = prompt('What Type of Uke do you play?');
-let myBrandUke = prompt('What Brand of Uke do you play?');
-let myUkeLevel = prompt('Describe your player level as Beginner, Intermediate, Advanced');
-let myYrsUke = confirm('Played > 5?');
+let myNameUke = prompt('What TYPE of Uke do you play?');
+let myBrandUke = prompt('What BRAND of Uke do you play?');
+let myUkeLevel = prompt('Describe your player level as (B)eginner, (I)ntermediate, (A)dvanced');
+let myYrsUke = confirm('Played > 5 years?');
 
 let output = document.getElementById(' name ');
 output.innerHTML = (FName +' '+ LName);
@@ -30,12 +30,9 @@ console.log(myYrsUke);
 if (myYrsUke === true) {  //if the years playing uke is greater than 5
     let yrsTrue = document.getElementById('yrsTrue');
     yrsTrue.innerHTML = 'Great, ' + FName + ', we see you\'ve been playing the Uke for some time now!';
-
-    // yrsTrue.innerHTML = 'Great, ' + FName + ' ' + LName + ', we see you\'ve been playing the Uke for some time now!';
-} else {
-//console.log('Great ' + FName + ' you\'re fairly new playing the Uke!');
+}
+else {
     let yrsFalse = document.getElementById('yrsFalse');
     yrsFalse.innerHTML = 'No worries, ' + FName + ', you\'ll enjoy our program to further your playing the Uke!';
 
-    // yrsFalse.innerHTML = 'No worries, ' + FName + ' ' + LName + ', you\'ll enjoy our program to further your playing the Uke!';
 }
